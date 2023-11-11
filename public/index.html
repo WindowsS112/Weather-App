@@ -26,18 +26,43 @@
     -->
     <title>React App</title>
   </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+<body>
+  <div class="container">
+    <header>
+      <h1>Weather App</h1>
+    </header>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+    <main>
+      <section class="current-weather">
+        <h2>Huidige Weersomstandigheden in: <p class="city"></p></h2>
+        <p class="temperature"></p>
+        <p class="weather-description"></p>
+      </section>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+      <section class="forecast">
+        <h2>Weersvoorspelling</h2>
+        <ul>
+          <li>Maandag: Zonnig</li>
+          <li>Dinsdag: Bewolkt</li>
+          <li>Woensdag: Regenachtig</li>
+          <!-- Voeg hier meer dagen toe -->
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2023 Weather App</p>
+    </footer>
+  </div>
+  <div id="root" class="rootremove"></div>
+  
+  <div id="root"></div>
+
+  <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+  <!-- Voeg hier je React-component toe -->
+
+
+</body>
+
 </html>
