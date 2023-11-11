@@ -21,7 +21,7 @@ reportWebVitals();
 // ###API-URL###### //
 // ################ //
 
-const apiKey = 'cdc9a1b6b11fc1049ee66e4c1ae8f2e8';
+const apiKey = '';
 
 // Vervang 'JOUW_STAD' door de gewenste stad (bijvoorbeeld Amsterdam)
 const city = 'Amsterdam';
@@ -30,7 +30,7 @@ const city = 'Amsterdam';
 const country = 'NL';
 
 // Bouw de API-url op
-const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${apiKey}&units=metric`;
+const apiUrl = `q=${city},${country}&appid=${apiKey}&units=metric`;
 
 // Haal gegevens op van de OpenWeatherMap API
 fetch(apiUrl)
